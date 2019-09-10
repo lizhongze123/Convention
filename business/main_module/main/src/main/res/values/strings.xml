@@ -1,0 +1,20 @@
+<resources>
+    <string name="main_app_name">main</string>
+
+    <!--main-->
+    <string name="main_home_tab">首页</string>
+    <string name="main_order_tab">订单</string>
+    <string name="main_setting_tab">我的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--end-->
+
+    <!--home-->
+    <string name="home_function_name_mater">材料</string>
+    <string name="home_function_name_bag">租赁</string>
+    <string name="home_function_name_hourglass">外卖</string>
+    <string name="home_function_name_car">货车</string>
+    <!--home-->
+
+</resources>

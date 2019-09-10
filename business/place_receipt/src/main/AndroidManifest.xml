@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.gz0101.hzwy.receipt">
+    <application >
+        <activity
+            android:name=".activity.PlaceReceiptActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddNewPlaceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

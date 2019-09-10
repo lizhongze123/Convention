@@ -1,0 +1,15 @@
+<resources>
+    <string name="module_name_place">选择地址</string>
+    <string name="modify_place">修改地址</string>
+    <string name="add_new_place">添加地址</string>
+    <string name="add_a_new_place">添加新地址</string>
+    <string name="no_place">暂无收获地址</string>
+    <string name="default_loc">默认</string>
+    <string name="save_text">保存</string>
+    <string name="my_name_is">收货人姓名</string>
+    <string name="phone_number">手机号码</string>
+    <string name="my_area">所在地区</string>
+    <string name="loc_detail">详细地址</string>
+    <string name="set_default_loc">设为默认地址</string>
+    <string name="delete_this">删除地址</string>
+</resources>

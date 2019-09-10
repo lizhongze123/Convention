@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LeaseMainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/color_ffffff</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    <style name="baseTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="LeaseOrderTitle" parent="baseTextStyle">
+        <item name="android:textColor">@color/colorTruckContent</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="LeaseOrderContent" parent="baseTextStyle">
+        <item name="android:textColor">@color/colorTruckContent</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginRight">28dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="LeaseOrderNew" parent="baseTextStyle">
+        <item name="android:textColor">@color/colorTruckContent</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="LeaseLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">#FFF</item>
+    </style>
+    <style name="LeaseLayoutNewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">83dp</item>
+        <item name="android:background">#FFF</item>
+    </style>
+    <style name="RightBtn">
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">17dp</item>
+        <item name="android:paddingBottom">17dp</item>
+        <item name="android:src">@drawable/ic_entrance_black</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="InstructionStyle" parent="baseTextStyle">
+
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:textColor">@color/colorTruckContent</item>
+    </style>
+    <style name="InstructionTitle" parent="InstructionStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="InstructionContent" parent="InstructionStyle">
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

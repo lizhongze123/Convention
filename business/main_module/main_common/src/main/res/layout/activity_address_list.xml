@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f8f8f8"
+    tools:context=".ui.AddressListActivity">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/base_topbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_address_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="49dp"
+        android:background="@color/color_ffffff" />
+
+    <Button
+        android:id="@+id/btn_address_list"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_btn"
+        android:text="@string/address_list_add"
+        android:textColor="@color/color_ffffff"
+        android:textSize="14sp" />
+
+</RelativeLayout>

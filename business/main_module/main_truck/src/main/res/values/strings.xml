@@ -1,0 +1,13 @@
+<resources>
+    <string name="module_name_truck">货车</string>
+    <string name="truck_detail_title">货车详情</string>
+    <string name="truck_find_hint">前输入司机姓名</string>
+    <string name="truck_status_1">休息中</string>
+    <string name="car_type">车型</string>
+    <string name="car_card">车牌号</string>
+    <string name="car_desc">车辆描述</string>
+    <string name="call_to">电话预约</string>
+    <string name="no_type">暂未设置车型</string>
+    <string name="no_card">暂未设置车牌号</string>
+    <string name="no_desc">暂无车辆描述</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gz0101.hzwy.hourglass">
+
+    <application>
+        <activity
+            android:name=".ui.HourglassOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ReportShopActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ShopDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.HourglassCommodityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.HourglassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.HourglassSearchActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

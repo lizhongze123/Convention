@@ -1,0 +1,27 @@
+rootProject.name = 'hzwy_android'
+include ':app', 'buildSrc'
+
+def include_business(String moduleName, String projectPath) {
+    include moduleName
+    project(moduleName).projectDir = new File('business', projectPath)
+}
+
+def include_dependence(String moduleName, String projectPath) {
+    include moduleName
+    project(moduleName).projectDir = new File('dependence', projectPath)
+}
+
+include_business(':login', 'login')
+include_business(':main', 'main_module/main')
+include_business(':main_truck', 'main_module/main_truck')
+include_business(':main_lease', 'main_module/main_lease')
+include_business(':main_material', 'main_module/main_material')
+include_business(':place_receipt', 'place_receipt')
+include_business(':main_hourglass', 'main_module/main_hourglass')
+include_business(':main_common', 'main_module/main_common')
+
+include_dependence(':baselibrary', 'baselibrary')
+include_dependence(':city_picker', 'city_picker')
+include_dependence(':take_camera', 'take_camera')
+include_dependence(':picture_library', 'picture_library')
+include_dependence(':ucrop', 'ucrop')

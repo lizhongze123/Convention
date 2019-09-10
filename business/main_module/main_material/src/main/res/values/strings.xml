@@ -1,0 +1,23 @@
+<resources>
+    <string name="name_material">材料</string>
+    <string name="list_goods">清单</string>
+    <string name="sum_all">合计：￥%s</string>
+    <string name="to_pay">结算(%d)</string>
+    <string name="select_goods">已选商品</string>
+    <string name="hint_find">请输入所需要的商品名称</string>
+    <string name="clear_shop_car_1">清空清单的所有商品</string>
+    <string name="clear_1">清空</string>
+    <string name="order_title_m">确定下单</string>
+    <string name="get_loc">领取地点</string>
+    <string name="select_me">自选</string>
+    <string name="get_time">领取时间</string>
+    <string name="to_time">归还时间</string>
+    <string name="money_count">商品金额</string>
+    <string name="good_empty">空空如也~</string>
+    <string name="lease_count">运费</string>
+    <string name="my_desc">留言备注</string>
+    <string name="send_order">提交订单</string>
+    <string name="lease_all_sum">押金金额：</string>
+    <string name="my_desc_content">请帮我打包好，检查清楚尽快发货。</string>
+    <string name="select_location">选择收获地址</string>
+</resources>

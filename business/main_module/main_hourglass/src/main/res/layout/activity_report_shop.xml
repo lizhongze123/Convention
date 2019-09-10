@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f8f8f8"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".ui.ReportShopActivity">
+
+    <include layout="@layout/base_topbar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_report_problem"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="@string/report_problm_left"
+            android:textColor="@color/color_222222"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_report_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="28dp"
+            android:text="@string/report_problm_right" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/ic_access" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_report_detail"
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:background="@color/color_ffffff"
+        android:gravity="top"
+        android:hint="@string/report_detail_hint"
+        android:padding="12dp"
+        android:textColor="@color/color_222222"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp" />
+
+</LinearLayout>

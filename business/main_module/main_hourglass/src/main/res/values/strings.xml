@@ -1,0 +1,44 @@
+<resources>
+    <string name="module_name">外卖</string>
+    <!--hourglass-->
+    <string name="hint_find">请输入店铺名称</string>
+    <!--hourglass-->
+
+    <!--search-->
+    <string name="search_no_result">暂无搜索结果</string>
+    <string name="search_change_text">可换个关键词试试</string>
+    <!--serarch-->
+
+    <!--commodity-->
+    <string name="commodity_goods_list">清单</string>
+    <string name="commodity_goods_all">合计：￥%s</string>
+    <string name="commodity_pay">结算(%d)</string>
+    <string name="selected_goods">已选商品</string>
+    <!--commodity-->
+
+    <!--shopdetail-->
+    <string name="shop_detail_title">店铺详情</string>
+    <string name="shop_detail_type">商家品类</string>
+    <string name="shop_detail_address">店家地址</string>
+    <string name="shop_detail_phone">店家电话</string>
+    <string name="shop_detail_report">举报店家</string>
+    <string name="shop_detail_permission_call_error">请打开拨打电话权限</string>
+    <!--shopdetail-->
+
+    <!--report-->
+    <string name="report_title">举报商家</string>
+    <string name="report_problm_left">反馈问题</string>
+    <string name="report_problm_right">请选择</string>
+    <string name="report_detail_hint">详细信息</string>
+    <!--report-->
+    <!--order-->
+    <string name="order_title">确定下单</string>
+    <string name="order_sunmit">提交订单</string>
+    <string name="order_actual_pay">实付款：</string>
+    <string name="order_goods_money">商品金额</string>
+    <string name="order_goods_freight">运费</string>
+    <string name="order_remark">备注留言</string>
+    <string name="order_remark_text">请帮我打包好，检查清楚尽快发货。</string>
+    <!--order-->
+
+</resources>

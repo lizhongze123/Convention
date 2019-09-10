@@ -1,0 +1,94 @@
+ext {
+    android = [
+            compileSdkVersion: 27,
+            minSdkVersion    : 19,
+            targetSdkVersion : 27,
+            versionCode      : parseVersionCode(VERSION_CODE),
+            versionName      : "${VERSION_NAME}",
+    ]
+
+    libsVersion = [
+            supportLibraryVersion = "27.1.1",
+            support_v4 = "27.1.1",
+
+            arouter_api = "1.2.1.1",
+            arouter_compiler = "1.0.3",
+
+            rxJava = "1.3.0",
+            rxAndroid = "1.2.1",
+
+            retrofit = "2.2.0",
+            fastjson = "1.2.20",
+            converter_gson = "2.2.0",
+            okhttp = "3.8.1",
+            logging_interceptor = "3.8.1",
+            okio = "1.12.0",
+            adapter_rxjava = "2.1.0",
+
+            glide = "glide:4.7.1",
+
+            event_bus = "3.1.1",
+            refresh = "1.0.5.1",
+
+            round_image = "2.2.1",
+            green_dao = "3.2.2"
+    ]
+    dependencies = [
+            //android
+            appcompatV7        : "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion",
+            support_v4         : "com.android.support:support-v4:$rootProject.support_v4",
+            design             : "com.android.support:design:$rootProject.supportLibraryVersion",
+            recycleview        : "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion",
+
+            //ARouter
+            arouter_api        : "com.alibaba:arouter-api:$rootProject.arouter_api",
+            arouter_compiler   : "com.alibaba:arouter-compiler:$rootProject.arouter_compiler",
+
+            //RxJava
+            rxJava             : "io.reactivex:rxjava:$rootProject.rxJava",
+            rxAndroid          : "io.reactivex:rxandroid:$rootProject.rxAndroid",
+
+            //OkHttp
+            okhttp             : "com.squareup.okhttp3:okhttp:$rootProject.okhttp",
+            logging_interceptor: "com.squareup.okhttp3:logging-interceptor:$rootProject.logging_interceptor",
+            retrofit           : "com.squareup.retrofit2:retrofit:$rootProject.retrofit",
+            converter_gson     : "com.squareup.retrofit2:converter-gson:$rootProject.converter_gson",
+            adapter_rxjava     : "com.squareup.retrofit2:adapter-rxjava:$rootProject.adapter_rxjava",
+            fastjson           : "com.alibaba:fastjson:$rootProject.fastjson",
+            okio               : "com.squareup.okio:okio:$rootProject.okio",
+
+            //glide
+            glide              : "com.github.bumptech.glide:$rootProject.glide",
+
+            //event-bus
+            event_bus          : "org.greenrobot:eventbus:$rootProject.event_bus",
+            refresh            : "com.scwang.smartrefresh:SmartRefreshLayout:$rootProject.refresh",
+
+            //round-image
+            round_image_view   : "com.makeramen:roundedimageview:$rootProject.round_image",
+
+            //green-dao
+            green_dao          : "org.greenrobot:greendao:$rootProject.green_dao",
+
+            // 业务
+            main_root          : project(':main'),
+            login              : project(':login'),
+            main_truck         : project(':main_truck'),
+            main_lease         : project(':main_lease'),
+            main_material      : project(':main_material'),
+            place_receipt      : project(':place_receipt'),
+            main_hourglass     : project(':main_hourglass'),
+            main_common        : project(':main_common'),
+            // 依赖
+            baselibrary        : project(':baselibrary'),
+            city_picker        : project(':city_picker'),
+            take_camera        : project(':take_camera'),
+            picture_library     : project(':picture_library'),
+            ucrop               : project(':ucrop')
+    ]
+
+}
+
+def static parseVersionCode(versioncode) {
+    return Integer.parseInt(versioncode)
+}

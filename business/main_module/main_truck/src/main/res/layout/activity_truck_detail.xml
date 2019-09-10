@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.TruckDetailActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:background="#FFF"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_access_bar"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorTruckContent"
+            android:text="@string/truck_detail_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="50dp"
+            android:textColor="@color/colorTruckContent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="14sp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F8F8F8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="#FFF"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_search"
+                    android:transitionName="truck_icon" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:transitionName="truck_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#3F3F3F"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="12dp"
+                android:background="#FFF"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/car_type"
+                    android:textColor="@color/colorTruckTitle"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/car_type"
+                    android:textColor="@color/colorTruckContent"
+                    android:layout_centerVertical="true"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="30"
+                    android:hint="@string/no_type"
+                    android:transitionName="truck_type"
+                    android:textColorHint="@color/colorHint"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:background="#FFF"
+                android:layout_height="1dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="14dp"
+                    android:background="@color/colorTruckLine"/>
+            </FrameLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="12dp"
+                android:background="#FFF"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/car_card"
+                    android:textColor="@color/colorTruckTitle"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/car_card"
+                    android:textColor="@color/colorTruckContent"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="50"
+                    android:textSize="12sp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentRight="true"
+                    android:textColorHint="@color/colorHint"
+                    android:hint="@string/no_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:background="#FFF"
+                android:layout_height="1dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="14dp"
+                    android:background="@color/colorTruckLine"/>
+            </FrameLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#FFF"
+                android:paddingLeft="12dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/car_desc"
+                    android:textColor="@color/colorTruckTitle"
+                    android:textSize="12sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/car_desc"
+                    android:maxLines="3"
+                    android:minLines="1"
+                    android:maxLength="50"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:textColor="@color/colorTruckContent"
+                    android:textSize="12sp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentRight="true"
+                    android:textColorHint="@color/colorHint"
+                    android:hint="@string/no_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/card_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_to_call"
+        android:layout_alignParentBottom="true"
+        android:text="@string/call_to"
+        android:textSize="14sp"
+        android:textColor="#FFF"
+        android:onClick="onCall"
+        android:layout_height="50dp" />
+</RelativeLayout>

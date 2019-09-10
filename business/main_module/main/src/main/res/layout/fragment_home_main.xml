@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.HomeMainFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="314dp"
+        android:background="@mipmap/home_bg_left">
+
+        <ImageView
+            android:id="@+id/iv_home_scan"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/home_ic_scan" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginRight="24dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_home_function_mater"
+            android:layout_width="152dp"
+            android:layout_height="152dp"
+            android:background="@drawable/home_function_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46dp"
+                android:src="@mipmap/home_ic_mater" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/home_function_name_mater"
+                android:textColor="@color/color_222222"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_home_function_bag"
+            android:layout_width="152dp"
+            android:layout_height="152dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/home_function_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46dp"
+                android:src="@mipmap/home_ic_bag" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/home_function_name_bag"
+                android:textColor="@color/color_222222"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginRight="24dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_home_function_hourglass"
+            android:layout_width="152dp"
+            android:layout_height="152dp"
+            android:background="@drawable/home_function_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46dp"
+                android:src="@mipmap/home_ic_hourglass" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/home_function_name_hourglass"
+                android:textColor="@color/color_222222"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_home_function_car"
+            android:layout_width="152dp"
+            android:layout_height="152dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/home_function_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46dp"
+                android:src="@mipmap/home_ic_car" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/home_function_name_car"
+                android:textColor="@color/color_222222"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

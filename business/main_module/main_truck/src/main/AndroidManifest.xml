@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.gz0101.hzwy.truck">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application >
+        <activity
+            android:name=".activity.TruckActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.TruckDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+    </application>
+</manifest>

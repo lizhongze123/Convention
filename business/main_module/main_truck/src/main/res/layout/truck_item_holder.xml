@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFF8F8F8"
+    android:layout_height="96dp">
+    <RelativeLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:background="#FFF"
+        android:padding="12dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image"
+            android:transitionName="truck_icon"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_search"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/image"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name"
+                android:transitionName="truck_name"
+                android:layout_width="wrap_content"
+                android:textColor="#222222"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/type"
+                android:transitionName="truck_type"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:textColor="#222222"
+                android:textSize="14sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="top|right"
+        android:background="#F3B05C"
+        android:text="@string/truck_status_1"
+        android:textSize="10sp"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:layout_height="20dp" />
+</FrameLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_verify_1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/checking_phone_verify_bg_selector"
+            android:enabled="true"
+            android:gravity="center"
+            android:textColor="@color/color_ff222222"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_verify_2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/checking_phone_verify_bg_selector"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="@color/color_ff222222"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_verify_3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/checking_phone_verify_bg_selector"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="@color/color_ff222222"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_verify_4"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/checking_phone_verify_bg_selector"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="@color/color_ff222222"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_verify_5"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/checking_phone_verify_bg_selector"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="@color/color_ff222222"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_verify_6"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/checking_phone_verify_bg_selector"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="@color/color_ff222222"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ll_code"
+        android:layout_alignTop="@+id/ll_code"
+        android:background="@android:color/transparent"
+        android:cursorVisible="false"
+        android:inputType="number"
+        android:textColor="@android:color/transparent" />
+</RelativeLayout>

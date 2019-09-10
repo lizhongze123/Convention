@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f8f8f8"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/color_ffffff">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/ic_appbar_back" />
+
+        <TextView
+            android:id="@+id/tv_commodity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_222222"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_commodity_home"
+            android:layout_width="18dp"
+            android:layout_height="19dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:gravity="center"
+            android:src="@mipmap/hourglass_commodity_home" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/top_bar"
+        android:background="#FFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:background="@drawable/find_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginLeft="19dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_search" />
+
+            <EditText
+                android:id="@+id/et_commodity_find"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@null"
+                android:hint="@string/hint_find"
+                android:textColor="@color/color_222222"
+                android:textColorHint="@color/color_cccccc"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_commodity_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:layout_marginBottom="50dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_commodity_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/ll_hourglass_commodity_bottom_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="50dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="120dp"
+                android:background="@color/color_ffffff">
+
+                <View
+                    android:id="@+id/tab1"
+                    android:layout_width="4dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/shape_tab_ins" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/tab1"
+                    android:text="@string/selected_goods"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_commodity_clear"
+                    android:layout_width="26dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_trash" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_f8f8f8" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_commodity_goods_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="@color/color_ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_ffffff"
+            android:elevation="1dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_commodity_goods_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/commodity_goods_all"
+                android:textColor="@color/color_222222"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_commodity_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/shape_btn"
+                android:minWidth="90dp"
+                android:text="@string/commodity_pay"
+                android:textColor="#FFF" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tv_commodity_goods_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_good_list"
+            android:gravity="center"
+            android:text="@string/commodity_goods_list"
+            android:textColor="#F5F5F5"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_commodity_good_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_good_count"
+            android:gravity="center"
+            android:inputType="number"
+            android:minWidth="16dp"
+            android:minHeight="16dp"
+            android:text="0"
+            android:textColor="@color/color_ffffff"
+            android:textSize="7sp" />
+    </RelativeLayout>
+</RelativeLayout>

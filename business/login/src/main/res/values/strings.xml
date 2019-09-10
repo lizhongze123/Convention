@@ -1,0 +1,43 @@
+<resources>
+    <string name="login_app_name">login</string>
+
+    <!--登陆页面-->
+    <string name="login_welcome_tips">你好，欢迎你的到来~</string>
+    <string name="login_type_tips">可使用手机或者微信登陆</string>
+    <string name="login_type_message">短信登陆</string>
+    <string name="login_type_pwd">密码登陆</string>
+    <string name="login_verification_code">获取验证码</string>
+    <string name="login_input_phone_hint">请输入手机号</string>
+    <string name="loign_input_cvode_hint">请输入验证码</string>
+    <string name="login_phone_null_hint">手机号不能为空</string>
+    <string name="login_phone_error_hint">手机号格式不正确</string>
+    <string name="login_verification_null_hint">验证码不能为空</string>
+    <string name="login_verification_error_hint">验证码格式不正确</string>
+    <string name="login_pwd_null_hint">密码不能为空</string>
+    <string name="login_pwd_error_hint">密码格式不正确</string>
+    <string name="login_note_verify_success_hint">验证码已发送至您的手机，请注意查收</string>
+    <string name="login_input_pwd_hint">请输入密码</string>
+    <string name="login_login">登录</string>
+    <string name="login_forget_pwd">忘记密码？</string>
+    <string name="login_register_user">用户注册</string>
+    <string name="login_agree">登录即表示您同意</string>
+    <string name="login_agreement">《会展无忧用户协议》</string>
+    <string name="login_note_verify_count_down">%dS后重试</string>
+    <string name="login_login_permission">请打开手机权限</string>
+    <!--登陆页面-->
+
+    <!--注册-->
+    <string name="register_title">用户注册</string>
+    <string name="forget_pwd_title">忘记密码</string>
+    <string name="forget_pwd_reset">重置</string>
+    <string name="register">注册</string>
+    <string name="register_tip">注册即表示您同意</string>
+    <string name="register_tip_1">《隐私权相关政策》</string>
+
+
+    <!--注册-->
+
+    <!--check-->
+    <string name="check_phone_tip">验证手机号，保护帐号安全</string>
+    <!--check-->
+</resources>

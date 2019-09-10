@@ -1,0 +1,32 @@
+<resources>
+    <string name="module_name_lease">租赁</string>
+    <string name="module_menu">流程</string>
+    <string name="instruction">租赁流程</string>
+    <string name="order_title">确定下单</string>
+    <string name="hint_find">请输入所需要的商品名称</string>
+    <string name="sum_all">合计：￥%s</string>
+    <string name="to_pay">结算(%d)</string>
+    <string name="main_no">无可租赁物品</string>
+    <string name="list_goods">清单</string>
+    <string name="get_loc">领取地点</string>
+    <string name="select_me">自选</string>
+    <string name="get_time">领取时间</string>
+    <string name="to_time">归还时间</string>
+    <string name="money_count">押金金额</string>
+    <string name="good_empty">空空如也~</string>
+    <string name="lease_count">租金金额</string>
+    <string name="my_desc">留言备注</string>
+    <string name="select_goods">已选商品</string>
+    <string name="send_order">提交订单</string>
+    <string name="clear_shop_car">清空清单的所有商品</string>
+    <string name="clear">清空</string>
+    <string name="lease_all_sum">押金金额：</string>
+    <string name="select_location">选择收获地址</string>
+    <string name="my_desc_content">请帮我打包好，检查清楚尽快发货。</string>
+    <string name="instruction_title">租赁流程: </string>
+    <string name="instruction_content1">1.选择租赁商品，选择数量或者天数。</string>
+    <string name="instruction_content2">2.下单选择领取和归还时间，领取地点或者自选收货地址。</string>
+    <string name="instruction_content3">3.交付押金，到领取时间与地点，找会展无忧人员。 使用订单二维码进行认领。</string>
+    <string name="instruction_content4">4.到归还时间，返回领取地点如数完好无损归还租赁 商品，如有丢失损坏，自行线下解决。</string>
+    <string name="instruction_content5">5.租用方，归还租赁商品后，需确认归还。而租赁方 确认无误后，将归还押金。订单完成！</string>
+</resources>

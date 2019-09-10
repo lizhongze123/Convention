@@ -1,0 +1,111 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.gz0101.hzwy"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        flavorDimensions "versionCode"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+                arguments = [moduleName: "app"]
+            }
+        }
+        packagingOptions {
+            exclude 'META-INF/rxjava.properties'
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('hzwy.jks')
+            storePassword "gz0101"
+            keyAlias "hzwy"
+            keyPassword "gz0101"
+        }
+        debug {
+            storeFile file('hzwy.jks')
+            storePassword "gz0101"
+            keyAlias "hzwy"
+            keyPassword "gz0101"
+        }
+    }
+
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.each { output ->
+                def outputFile = output.outputFile
+                if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                    def fileName
+                    if (variant.buildType.name == "release") {
+                        fileName = "HZWY_android_v" + variant.versionName + "_" + flavorName + "_" + getDate() + "_release.apk"
+                    } else {
+                        fileName = "HZWY_android_v" + variant.versionName + "_" + flavorName + "_" + getDate() + "_debug.apk"
+                    }
+                    output.outputFileName = new File("./", fileName)
+                }
+            }
+    }
+
+    buildTypes {
+        debug {
+            resValue("string", "isModule", "${isModule.toBoolean()}")
+            signingConfig signingConfigs.debug
+        }
+        release {
+            resValue("string", "isModule", "${isModule.toBoolean()}")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+def static getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMddHHmm')
+    return formattedDate
+}
+
+repositories {
+    flatDir {
+        if (!isModule.toBoolean()) {
+            dirs 'libs', rootProject.ext.dependencies.baselibrary.file('libs'),  rootProject.ext.dependencies.login.file('libs')
+        } else {
+            dirs 'libs', rootProject.ext.dependencies.baselibrary.file('libs')
+        }
+    }
+    maven {
+        url 'https://maven.google.com/'
+        name 'Google'
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation rootProject.ext.dependencies.baselibrary
+    annotationProcessor rootProject.ext.dependencies.arouter_compiler
+    if (!isModule.toBoolean()) {
+        implementation rootProject.ext.dependencies.login
+        implementation rootProject.ext.dependencies.main_root
+        implementation rootProject.ext.dependencies.main_truck
+        implementation rootProject.ext.dependencies.main_lease
+        implementation rootProject.ext.dependencies.main_material
+        implementation rootProject.ext.dependencies.place_receipt
+        implementation rootProject.ext.dependencies.main_hourglass
+        implementation rootProject.ext.dependencies.main_common
+    }
+}

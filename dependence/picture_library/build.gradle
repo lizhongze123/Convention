@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+    }
+
+    buildTypes {
+        debug {
+            resValue("string", "isModule", "${isModule.toBoolean()}")
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            resValue("string", "isModule", "${isModule.toBoolean()}")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':baselibrary')
+
+    implementation 'com.github.chrisbanes.photoview:library:1.2.4'
+
+    api rootProject.ext.dependencies.rxAndroid
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.5'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation rootProject.ext.dependencies.ucrop
+}

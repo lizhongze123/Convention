@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.luck.picture.lib">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <activity
+            android:name=".PictureSelectorActivity"
+            android:theme="@style/activity.Theme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".PictureBaseActivity" />
+        <activity android:name=".PicturePreviewActivity" />
+        <activity
+            android:name=".PictureVideoPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensor" />
+        <activity android:name=".PictureExternalPreviewActivity" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.yalantis.ucrop.PictureMultiCuttingActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".PicturePlayAudioActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
+
+</manifest>

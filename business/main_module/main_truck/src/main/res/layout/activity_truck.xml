@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF8F8F8"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_access_bar"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorTruckContent"
+            android:text="@string/module_name_truck"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="50dp"
+            android:textColor="@color/colorTruckContent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="14sp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="#FFF"
+        android:layout_height="56dp">
+        <LinearLayout
+            android:layout_margin="12dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/find_truck"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"
+                android:src="@drawable/ic_search"
+                android:scaleType="fitXY"
+                android:layout_height="16dp" />
+            <EditText
+                android:id="@+id/find_edit"
+                android:layout_width="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:background="@null"
+                android:textSize="13sp"
+                android:textColorHint="#CCCCCC"
+                android:textColor="#000"
+                android:hint="@string/truck_find_hint"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

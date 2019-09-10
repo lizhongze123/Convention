@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_item_report_add"
+        android:layout_width="113dp"
+        android:layout_height="113dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:src="@mipmap/ic_add_picture" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_item_report"
+        android:layout_width="113dp"
+        android:layout_height="113dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_item_report"
+            android:layout_width="113dp"
+            android:layout_height="113dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_item_report_detele"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_delete_square" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

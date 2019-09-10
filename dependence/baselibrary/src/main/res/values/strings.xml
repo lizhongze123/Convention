@@ -1,0 +1,8 @@
+<resources>
+    <string name="base_library_name">baselibrary</string>
+
+    <string name="base_request_params_error">请求参数错误</string>
+    <string name="base_net_error">网络连接错误</string>
+    <string name="base_dialog_left">确定</string>
+    <string name="base_dialog_right">取消</string>
+</resources>

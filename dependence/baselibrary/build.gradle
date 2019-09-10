@@ -1,0 +1,95 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+                arguments = [moduleName: "base"]
+            }
+        }
+
+    }
+
+    greendao {
+        schemaVersion 1
+        daoPackage 'com.greendao.gen'
+        targetGenDir 'src/main/java'
+    }
+
+    buildTypes {
+        debug {
+            resValue("string", "version_code", "${VERSION_CODE}")
+            resValue("string", "version_name", "${VERSION_NAME}")
+            resValue("string", "isModule", "${isModule.toBoolean()}")
+        }
+        release {
+            resValue("string", "version_code", "${VERSION_CODE}")
+            resValue("string", "version_name", "${VERSION_NAME}")
+            resValue("string", "isModule", "${isModule.toBoolean()}")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api(rootProject.ext.dependencies.appcompatV7) {
+        exclude module: "support-annotations"
+        exclude module: "support-v4"
+    }
+    api(rootProject.ext.dependencies.support_v4) {
+        exclude module: "support-annotations"
+    }
+
+    api rootProject.ext.dependencies.design
+    api rootProject.ext.dependencies.recycleview
+
+    //ARouter
+    api(rootProject.ext.dependencies.arouter_api) {
+        exclude group: 'com.android.support'
+    }
+    annotationProcessor rootProject.ext.dependencies.arouter_compiler
+
+    //rxJava
+    api(rootProject.ext.dependencies.rxJava) {
+        exclude module: "rxAndroid"
+    }
+    api rootProject.ext.dependencies.rxAndroid
+    //okhttp
+    api rootProject.ext.dependencies.fastjson
+    api rootProject.ext.dependencies.okio
+    api rootProject.ext.dependencies.retrofit
+    api rootProject.ext.dependencies.converter_gson
+    api rootProject.ext.dependencies.adapter_rxjava
+    api rootProject.ext.dependencies.okhttp
+    api rootProject.ext.dependencies.logging_interceptor
+    //glide
+    api rootProject.ext.dependencies.glide
+
+    //event bus
+    api rootProject.ext.dependencies.event_bus
+
+    api rootProject.ext.dependencies.refresh
+
+    //round image
+    api rootProject.ext.dependencies.round_image_view
+
+    api rootProject.ext.dependencies.green_dao
+}

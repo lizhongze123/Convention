@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_topbar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:src="@mipmap/check_ic_binding" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="@string/check_phone_tip"
+        android:textColor="@color/color_ff222222"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:src="@mipmap/login_ic_accont" />
+
+        <EditText
+            android:id="@+id/et_check_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/login_input_phone_hint"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColor="@color/color_ff3f3f3f"
+            android:textColorHint="@color/color_ffcccccc"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_check_phone_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:src="@mipmap/login_ic_accont"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/color_eeeeee" />
+
+    <TextView
+        android:id="@+id/tv_check_obtain_ver"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/login_loign_btn_bg_enable"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="@string/login_verification_code"
+        android:textColor="@color/color_66ffffff"
+        android:textSize="16sp" />
+</LinearLayout>

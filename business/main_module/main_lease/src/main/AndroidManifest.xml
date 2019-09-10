@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gz0101.hzwy.lease">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application >
+        <activity
+            android:name=".activity.LeaseActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LeaseOrderActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LeaseInstructionActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

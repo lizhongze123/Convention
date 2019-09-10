@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        debug {
+            resValue("string", "isModule", "${isModule.toBoolean()}")
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            resValue("string", "isModule", "${isModule.toBoolean()}")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    resourcePrefix 'ucrop_'
+
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:24.2.1'
+    implementation 'com.android.support:recyclerview-v7:24.2.1'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation rootProject.ext.dependencies.baselibrary
+}
