@@ -10,4 +10,5 @@ public class RouterConstance {
     public static final String ACTIVITY_URL_HOURGLASS = "/main_hourglass/HourglassActivity";
     public static final String ACTIVITY_URL_ADDRESS_LIST = "/main_common/AddressListActivity";
     public static final String ACTIVITY_URL_TAKE_PICTURE = "/main_common/TakePictureActivity";
+    public static final String ACTIVITY_URL_SHOP_DATA = "/main/ShopDataActivity";
 }
