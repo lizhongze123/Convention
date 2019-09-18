@@ -15,7 +15,7 @@ import com.gz0101.hzwy.main.contract.MainContract;
 import com.gz0101.hzwy.main.presenter.MainPresenterImpl;
 
 @Route(path = RouterConstance.ACTIVITY_URL_SHOP_DATA)
-public class ShopDataActivity extends BaseActivity<MainPresenterImpl> implements MainContract.MainView, View.OnClickListener {
+public class ShopSettingActivity extends BaseActivity<MainPresenterImpl> implements MainContract.MainView, View.OnClickListener {
 
     ImageView ivAvatar;
     LinearLayout llType;
