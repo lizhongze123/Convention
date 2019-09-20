@@ -17,4 +17,6 @@
     <string name="home_function_name_car">货车</string>
     <!--home-->
 
+    <string name="no_goods">无商品</string>
+
 </resources>
